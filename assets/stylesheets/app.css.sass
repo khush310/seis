@@ -6,16 +6,42 @@ body
     width: 100%
     position: fixed
     bottom: 0
-    background: #0095DD
-    border: 1px solid #00539F
-    box-shadow: inset 0px 1px 1px rgba (0, 0, 0, 0)
+    background: #647997
+    border: 1px solid #2f3f57
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#5b6f8c),to(#7187a8))
     -webkit-box-sizing: border-box
     *
       -webkit-box-sizing: border-box
     #stage-wrapper
       height: 45px
+    #news
+      float: left
+      height: 45px
+      line-height: 45px
+      display: -webkit-box
+      -webkit-box-align: center
+      background: #485b7a
+      cursor: pointer
+      border: 1px solid #2f3f67
+      -webkit-box-shadow: -webkit-gradient(linear,0 0,0 100%,from(#5b6f8c),to(#7187a8))
+      box-shadow: inset 0 1px #5f789e,0 1px 1px 0 rgba(0,0,0,0.1)
+      background-image: -webkit-linear-gradient(top,rgb(101, 125, 162),#40516c)
+      -webkit-box-align: center
+      span 
+        padding-left: 1em
+        padding-right: 1em
+        color: white
+        font-family: "Josefin Sans"
+        font-size: 18px
+      img
+        height: 35px
+        width: 35px
+        display: block
+        margin-left: 1em
+      a
+        text-decoration: none
     #profile
-      width: 15%
+      width: 20%
       float: right
       height: 45px
       color: white
@@ -33,11 +59,41 @@ body
         display: block
         padding-left: 10px
       #button
-        padding: 0 1em
-        background: rgba(0,0,0,0.5)
+        padding: 0 1em 0 0.7em
+        background: #485b7a
         margin: 0 0 0 1em
         cursor: pointer
+        webkit-user-select: none
+        border: 1px solid #2f3f67
+        -webkit-box-shadow: -webkit-gradient(linear,0 0,0 100%,from(#5b6f8c),to(#7187a8))
+        box-shadow: inset 0 1px #5f789e,0 1px 1px 0 rgba(0,0,0,0.1)
+        background-image: -webkit-linear-gradient(top,rgb(101, 125, 162),#40516c)
       #button:hover
-        background: rgba(0,0,0,0.3)
-        
-
+        box-shadow: inset 0 1px #5f789e,0 1px 1px 0 rgba(0,0,0,0.1)
+        background-image: -webkit-linear-gradient(top,rgb(108, 129, 162),#40516c)
+    #repos
+      height: 300px
+      width: 300px
+      bottom: 40px
+      position: absolute
+      background-color: #42546d
+      border: 1px solid #313f54
+      -webkit-border-radius: 0 3px 3px 3px
+      border-radius: 0 3px 3px 3px
+      -webkit-box-shadow: 0 2px 1px 1px rgba(0,0,0,0.1)
+      box-shadow: 0 2px 1px 1px rgba(0,0,0,0.1)
+      right: 1%
+      background-image: -webkit-linear-gradient(top,rgb(108, 129, 162),#40516c)
+      overflow-y: scroll
+      overflow-x: hidden
+      .repo
+        padding: 10px
+        border: 1px solid #313f54
+        a
+          text-decoration: none
+      span
+        color: white
+        font-family: "Josefin Sans"
+        font-size: 18px
+        padding: 1em
+        line-height: 1.5 

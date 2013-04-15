@@ -15,4 +15,4 @@ K.bar.bind "initialize:after", (options) ->
       K.Bar.publisher.set(resp)  
       mainView = new K.Bar.Views.Main({model: K.Bar.publisher})
       K.bar.mainRegion.show(mainView)
-  )
+  ) 
